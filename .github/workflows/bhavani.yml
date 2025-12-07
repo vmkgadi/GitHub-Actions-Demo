@@ -1,0 +1,22 @@
+name: Kenny-Day1-Pipeline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Show greeting
+        run: echo "Kenny Day 1 Pipeline Works!"
+
+      - name: Show branch
+        run: echo "Branch: ${{ github.ref }}"
+
+      - name: Show build number
+        run: echo "Run Number: ${{ github.run_number }}"
+
