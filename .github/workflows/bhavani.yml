@@ -15,8 +15,8 @@ jobs:
         run: echo "Navyuga PBs"
 
       - name: Show branch
-        run: echo "Branch: ${{ github.ref }}"
+        run: 'echo "Branch: ${{ github.ref }}"'
 
       - name: Show build number
-        run: echo "Run Number: ${{ github.run_number }}"
+        run: 'echo "Run Number: ${{ github.run_number }}"'
 
