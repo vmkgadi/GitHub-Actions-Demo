@@ -1,4 +1,4 @@
-name: Kenny-Day1-Pipeline
+name: Kenny-PB-Pipeline
 
 on:
   push:
